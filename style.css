@@ -169,7 +169,7 @@ nav h2 {
 
 /* about */
 
-#about{
+#about, #Episodes{
     background-color: var(--main-color);
     padding: 100px 0 100px 0;
 }
@@ -214,7 +214,7 @@ hr{
   background-color: var(--sec-color);
   padding: 100px 0 100px 0;
 }
-.card-h2{
+.title-h2{
   max-width:fit-content;
   margin: 0 auto 50px;
 }
@@ -247,12 +247,38 @@ grid-row-gap: 30px;
   margin: 16px 0;
 }
 
+/* episodes */
 
+.ep-main{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
 
+.ep-card{
+  background-color: #250D44;
+  width: 380px;
+  border-radius: 24px;
+}
 
+.ep-card iframe{
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
 
-
-
+.ep-text{
+  padding: 24px;
+}
+.ep-text h4{
+  font-size: 24px;
+  font-weight: bold;
+}
+.ep-text p{
+  margin: 12px 0;
+}
+.ep-text h3{
+  color:var(--third-color);
+}
 
 
 
@@ -315,8 +341,9 @@ grid-row-gap: 30px;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .about-box h2{
-    font-size: 40px;
+  .title-h2{
+    text-align: center;
+    font-size: 38px;
 
   }
 
@@ -333,6 +360,19 @@ grid-row-gap: 30px;
   .box{
     padding: 24px;
 
+  }
+
+  /* episodes */
+
+  .ep-main{
+    flex-direction: column;
+  }
+
+  .ep-card{
+    width: 300px;
+  }
+  iframe{
+    max-width:300px
   }
 
 }
@@ -357,7 +397,23 @@ grid-row-gap: 30px;
 
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
+  .container{
+    margin: 0 30px;
+  }
   .navbar {
     padding: 30px 50px 20px;
+  }
+
+    .ep-main{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .ep-card{
+    width: 380px;
+  }
+  iframe{
+    max-width:380px
   }
 }
