@@ -24,6 +24,12 @@
   margin: 0 auto;
 }
 
+p {
+  color: rgba(255, 255, 255, 0.589);
+  line-height: 30px;
+
+}
+
 /* button */
 
 .btn {
@@ -154,6 +160,72 @@ nav h2 {
   margin: 10px 0 24px 0;
 }
 
+/* about */
+
+#about{
+    background-color: var(--main-color);
+    padding: 100px 0 100px 0;
+}
+
+.about-top{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-top h2{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.about-top p{
+    max-width: 60rem;
+}
+
+#ab-bottom{
+  margin-top: 20px;
+}
+
+hr{
+  margin: 80px 0;
+  border: 1px solid rgba(255, 255, 255, 0.171);
+}
+
+.about-bottom{
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-box{
+  text-align: center;
+}
+.about-box h2{
+  font-size: 48px;
+  margin-bottom: 2px;
+  color:  var(--third-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 576px) {
   .hero {
     background-size: 150% auto;
@@ -185,8 +257,55 @@ nav h2 {
   .hero-text {
     margin-top: 100px;
   }
+  .hero-text h1 {
+    font-size: 40px;
+  }
 
   .container {
     margin: 0 20px;
+  }
+
+  /* about */
+
+  #about{
+    padding: 40px 0;
+  }
+
+  hr{
+    margin: 40px 0;
+  }
+  .about-bottom{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-box h2{
+    font-size: 40px;
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .navbar {
+    padding: 30px 50px 20px;
   }
 }
