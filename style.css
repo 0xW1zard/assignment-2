@@ -48,6 +48,11 @@ p {
     #fb09b4 49.82%,
     #9100f8 81.65%
   );
+  transition: transform 0.3s ease-in-out 0s;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
 }
 
 .btn-2 {
@@ -56,8 +61,13 @@ p {
   border: 1px solid #00ff88;
   padding: 12px 17px;
   border-radius: 50px;
+  transition: all 0.3s ease;
 }
 
+.btn-2:hover {
+  color: #ffffffc2;
+  border: 1px solid #ffffff;
+}
 /* head */
 
 header {
@@ -115,7 +125,7 @@ nav h2 {
   align-items: center;
   gap: 32px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .hero-img {
@@ -163,6 +173,11 @@ nav h2 {
 .hero-text p {
   color: rgba(255, 255, 255, 0.589);
   margin: 10px 0 24px 0;
+}
+.btn-box{
+  display: flex;
+  justify-content: center;
+  gap:10px;
 }
 
 /* about */
@@ -249,7 +264,15 @@ hr {
   justify-content: center;
   align-items: start;
   padding: 40px;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
+.box:hover {
+  background-color: rgba(53, 17, 101, 0.7);
+  transform: translateY(-5px);
+}
+
 .box h4 {
   font-size: 24px;
   font-weight: bold;
@@ -295,6 +318,14 @@ hr {
   align-items: center;
   padding: 40px;
   border-radius: 40px;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.host-card:hover {
+  background-color: rgba(53, 17, 101, 0.7);
+  transform: translateY(-5px);
 }
 
 .host-text {
@@ -440,6 +471,7 @@ footer {
 
   .ep-main {
     flex-direction: column;
+    align-items: center;
   }
 
   .ep-card {
@@ -486,8 +518,8 @@ footer {
     font-size: 32px;
   }
 
-  .footer-social{
-    gap:14px;
+  .footer-social {
+    gap: 14px;
   }
 }
 
