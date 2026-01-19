@@ -313,28 +313,55 @@ hr {
   display: flex;
   gap: 8px;
   align-items: center;
-
 }
 
-.host-social a{
+.host-social a {
   padding: 10px;
   border: 1px solid rgba(255, 255, 255, 0.171);
   border-radius: 50px;
   display: flex;
 }
 
+/* footer */
 
+footer {
+  background-image: url(media/footer-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--sec-color);
+}
 
+.foot {
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.foot h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
 
+.footer-social {
+  display: flex;
+  gap: 40px;
+  margin: 24px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.footer-social a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
 
-
-
-
-
-
-
-
+.foot p {
+  text-align: center;
+}
 
 @media screen and (max-width: 576px) {
   .hero {
@@ -424,49 +451,45 @@ hr {
 
   /* Host */
 
-  .host-card{
+  .host-card {
     flex-direction: column;
     padding: 24px;
     text-align: center;
   }
 
- .host-img{
+  .host-img {
     width: 150px;
     height: 150px;
   }
 
-.host-text{
-  margin-top: 16px;
-  padding: 0;
+  .host-text {
+    margin-top: 16px;
+    padding: 0;
+  }
+
+  .host-social {
+    justify-content: center;
+  }
+
+  /* footer */
+
+  footer {
+    background-size: 150% auto;
+    background-position: center;
+  }
+
+  .foot {
+    padding: 40px;
+  }
+
+  .foot h1 {
+    font-size: 32px;
+  }
+
+  .footer-social{
+    gap:14px;
+  }
 }
-
-.host-social{
-  justify-content: center;
-}
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .container {
