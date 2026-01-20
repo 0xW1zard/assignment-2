@@ -238,6 +238,7 @@ hr {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
+  margin: 0 20px;
 }
 
 .box1 {
@@ -285,6 +286,7 @@ hr {
   display: flex;
   gap: 40px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .ep-card {
@@ -321,6 +323,7 @@ hr {
   transition:
     background-color 0.3s ease,
     transform 0.3s ease;
+  margin: 0 20px;
 }
 
 .host-card:hover {
@@ -461,6 +464,7 @@ footer {
   .grid {
     display: flex;
     flex-direction: column;
+    margin: 0;
   }
 
   .box {
@@ -475,10 +479,10 @@ footer {
   }
 
   .ep-card {
-    width: 300px;
+    width: 310px;
   }
   iframe {
-    max-width: 300px;
+    max-width: 310px;
   }
 
   /* Host */
@@ -487,6 +491,7 @@ footer {
     flex-direction: column;
     padding: 24px;
     text-align: center;
+    margin: 0;
   }
 
   .host-img {
